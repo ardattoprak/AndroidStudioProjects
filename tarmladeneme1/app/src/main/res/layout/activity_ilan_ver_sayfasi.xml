@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDFFEA"
+    tools:context=".ilanVerSayfasi">
+
+    <EditText
+        android:id="@+id/editTextText15"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <EditText
+        android:id="@+id/editTextText14"
+        android:layout_width="307dp"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/editTextText11"
+        android:layout_width="306dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="207dp"
+        android:layout_height="56dp"
+        android:text="New Advert"
+        android:textColor="#479F4A"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="95dp"
+        android:layout_height="87dp"
+        app:srcCompat="@mipmap/tarimlalogoooooo"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="401dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="667dp"
+        android:entries="@array/city_array" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="308dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="308dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="98dp"
+        android:layout_height="35dp"
+        android:text="City"
+        android:textColor="#438519"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="98dp"
+        android:layout_height="35dp"
+        android:text="Product"
+        android:textColor="#438519"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="109dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#68E36C"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CF2E2E"
+        android:textColorLink="#9A2828"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="558dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

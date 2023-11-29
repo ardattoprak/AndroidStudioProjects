@@ -1,0 +1,14 @@
+package msku.ceng.madlab.week8;
+
+public interface BoardListener {
+    byte NO_ONE =9;
+    byte PLAYER_1 = 1;
+    byte PLAYER_2 = 2;
+
+    void playerAt(byte player,byte row,byte col);
+
+    void gameEnded(byte winner);
+
+    void invalidPlay(byte row, byte col);
+
+}

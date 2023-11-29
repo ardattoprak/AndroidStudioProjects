@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tarımladeneme 1</string>
+    <string-array name="city_array">
+        <item>Antalya</item>
+        <item>Muğla</item>
+        <item>İstanbul</item>
+    </string-array>
+</resources>

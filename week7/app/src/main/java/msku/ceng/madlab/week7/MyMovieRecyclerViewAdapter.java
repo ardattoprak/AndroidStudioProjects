@@ -20,22 +20,22 @@ import java.util.List;
 public class MyMovieRecyclerViewAdapter extends RecyclerView.Adapter<MyMovieRecyclerViewAdapter.ViewHolder> {
 
     private final List<Movie> mValues;
+
     private MovieFragment.OnMovieSelected mListener;
     int selectedIndex;
-
-    public MyMovieRecyclerViewAdapter(List<Movie> items,MovieFragment.OnMovieSelected listener) {
+    public MyMovieRecyclerViewAdapter(List<Movie> items, MovieFragment.OnMovieSelected listener) {
         mValues = items;
         mListener = listener;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_movie, parent, false);
-
+        View view = LayoutInflater.from(parent.getContext()).
+                inflate(R.layout.fragment_movie, parent, false);
         return new ViewHolder(view);
 
     }
+
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
@@ -44,13 +44,12 @@ public class MyMovieRecyclerViewAdapter extends RecyclerView.Adapter<MyMovieRecy
         holder.mContentView.setText(mValues.get(position).getName());
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 if (mListener != null) {
                     mListener.movieSelected(holder.mItem);
                     notifyItemChanged(selectedIndex);
                     selectedIndex = holder.getLayoutPosition();
                     notifyItemChanged(selectedIndex);
-
                 }
             }
         });
@@ -72,7 +71,7 @@ public class MyMovieRecyclerViewAdapter extends RecyclerView.Adapter<MyMovieRecy
             super(view);
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.item_number);
-            mContentView =(TextView) view.findViewById(R.id.content);
+            mContentView = (TextView) view.findViewById(R.id.content);
         }
 
         @Override

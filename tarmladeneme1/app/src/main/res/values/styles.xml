@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Diğer stiller burada olabilir -->
+
+    <!-- Navbar rengi için stil -->
+    <style name="NavbarColor" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/green</item>
+    </style>
+
+</resources>
