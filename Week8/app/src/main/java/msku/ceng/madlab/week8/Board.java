@@ -12,13 +12,22 @@ public class Board {
     }
 
     public void move(byte row, byte col){
+
+        if(board[row][col] != 0){
+            boardListener.invalidPlay(row,col);
+            return;
+
+        }
+
         if(player1Turn){
             board[row][col] = PLAYER_1_SYMBOL;
-            boardListener.playerAt(boardListener.PLAYER_1,row,col);
-        }else {
+            boardListener.playerAt(BoardListener.PLAYER_1, row, col);
+        }else{
             board[row][col] = PLAYER_2_SYMBOL;
-            boardListener.playerAt(boardListener.PLAYER_2,row,col);
+            boardListener.playerAt(BoardListener.PLAYER_2, row, col);
         }
+
         player1Turn =! player1Turn;
     }
+
 }

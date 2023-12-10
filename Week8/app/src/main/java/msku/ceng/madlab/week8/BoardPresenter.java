@@ -4,7 +4,7 @@ import android.view.View;
 
 public class BoardPresenter implements BoardListener{
 
-   private BoardView boardView;
+    private BoardView boardView;
     private Board board;
 
     public void move( byte row, byte col){
@@ -13,11 +13,13 @@ public class BoardPresenter implements BoardListener{
 
     @Override
     public void playerAt(byte player, byte row, byte col) {
-        if (player == BoardListener.PLAYER_1) {
-            boardView.putSymbol(BoardView.PLAYER_1_SYMBOL,row,col);
-        }if (player == BoardListener.PLAYER_2) {
-            boardView.putSymbol(BoardView.PLAYER_2_SYMBOL,row,col);
-    }}
+        if(player == BoardListener.PLAYER_1){
+            boardView.putSymbol(BoardView.PLAYER_1_SYMBOL, row, col);
+        }else if(player == BoardListener.PLAYER_2){
+            boardView.putSymbol(BoardView.PLAYER_2_SYMBOL, row, col);
+        }
+
+    }
 
     public BoardPresenter(BoardView boardView) {
             this.boardView = boardView;
