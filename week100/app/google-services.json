@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979739283965",
+    "project_id": "week100",
+    "storage_bucket": "week100.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979739283965:android:f045d47dcd9e788e9e4994",
+        "android_client_info": {
+          "package_name": "msku.ceng.madlab.week100"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-tBdso7TQkbuTgVKQqMFL7ZFNVUV_lr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
